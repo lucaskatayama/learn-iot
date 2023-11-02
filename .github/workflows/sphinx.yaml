@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Create log
-        run: mkdir -p /tmp/sphinx-log
+        run: touch /tmp/sphinx-log
       - name: Build HTML
         uses: ammaraskar/sphinx-action@master
       - name: Upload artifacts
