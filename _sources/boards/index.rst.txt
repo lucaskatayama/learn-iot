@@ -5,4 +5,4 @@ Boards
    :maxdepth: 2
    
    arduino
-   esp32
+   esp32/index

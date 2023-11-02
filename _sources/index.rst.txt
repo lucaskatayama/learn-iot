@@ -6,16 +6,14 @@
 Welcome to IOT's documentation!
 =====================================
 
-Hello
------
-blablab
-
+.. image:: _static/images/cover.png
 
 .. toctree::
    :hidden:
 
    boards/index
    modules/index
+   tools
 
 
 Indices and tables
