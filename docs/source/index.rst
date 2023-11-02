@@ -6,9 +6,13 @@
 Welcome to IOT's documentation!
 =====================================
 
+Hello
+-----
+blablab
+
+
 .. toctree::
-   :maxdepth: 3
-   :caption: Contents
+   :hidden:
 
    boards/index
    modules/index
