@@ -19,6 +19,22 @@ extensions = [
     'sphinxcontrib.mermaid'
 ]
 
+myst_enable_extensions = [
+    "amsmath",
+    "attrs_inline",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "colon_fence",
+    "html_image",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
+]
+
 templates_path = ['_templates']
 exclude_patterns = []
 
