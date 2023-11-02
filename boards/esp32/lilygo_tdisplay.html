@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LilyGO T-Display S3 &mdash; IOT v1.0.0 documentation</title>
+  <title>3. LilyGO T-Display S3 &mdash; IOT v1.0.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Modules" href="../../modules/index.html" />
-    <link rel="prev" title="Lolin S2 Mini" href="lolins2mini.html" /> 
+    <link rel="next" title="RP2040" href="../rp2040/RP2040.html" />
+    <link rel="prev" title="2. Lolin S2 Mini" href="lolins2mini.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,24 +42,39 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Boards</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../arduino.html">Arduino</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">ESP32</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="esp32devkit.html">ESP32 DevKit</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lolins2mini.html">Lolin S2 Mini</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">LilyGO T-Display S3</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#diagrams">Diagrams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#enable-display">Enable Display</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#brightness">Brightness</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#references">References</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Boards</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../arduino.html">Arduino</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../arduino.html#arduino-nano">Arduino Nano</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">ESP32</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="esp32devkit.html">1. ESP32 DevKit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lolins2mini.html">2. Lolin S2 Mini</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. LilyGO T-Display S3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#diagrams">3.1. Diagrams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enable-display">3.2. Enable Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#brightness">3.3. Brightness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#references">3.4. References</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../rp2040/RP2040.html">RP2040</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../rp2040/RP2040.html#vcc-gnd-yd2040">VCC-GND YD2040</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../modules/index.html">Modules</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/MT3608.html">MT3608</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../projects/air_quality.html">Air Quality Sensor</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../tools.html">Tools</a></li>
 </ul>
 
@@ -77,9 +92,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Boards</a></li>
           <li class="breadcrumb-item"><a href="index.html">ESP32</a></li>
-      <li class="breadcrumb-item active">LilyGO T-Display S3</li>
+      <li class="breadcrumb-item active"><span class="section-number">3. </span>LilyGO T-Display S3</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/boards/esp32/lilygo_tdisplay.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -90,13 +104,13 @@
            <div itemprop="articleBody">
              
   <section class="tex2jax_ignore mathjax_ignore" id="lilygo-t-display-s3">
-<h1>LilyGO T-Display S3<a class="headerlink" href="#lilygo-t-display-s3" title="Link to this heading"></a></h1>
+<h1><span class="section-number">3. </span>LilyGO T-Display S3<a class="headerlink" href="#lilygo-t-display-s3" title="Link to this heading"></a></h1>
 <section id="diagrams">
-<h2>Diagrams<a class="headerlink" href="#diagrams" title="Link to this heading"></a></h2>
+<h2><span class="section-number">3.1. </span>Diagrams<a class="headerlink" href="#diagrams" title="Link to this heading"></a></h2>
 <p><a class="reference internal" href="../../_images/lilygo_tdisplay_s3.jpg.png"><img alt="lilygo_tdisplay_s3.jpg.png" class="align-center" src="../../_images/lilygo_tdisplay_s3.jpg.png" style="width: 600px;" /></a></p>
 </section>
 <section id="enable-display">
-<h2>Enable Display<a class="headerlink" href="#enable-display" title="Link to this heading"></a></h2>
+<h2><span class="section-number">3.2. </span>Enable Display<a class="headerlink" href="#enable-display" title="Link to this heading"></a></h2>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w"> </span><span class="n">pinMode</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
 <span class="w"> </span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
@@ -105,7 +119,7 @@
 </div>
 </section>
 <section id="brightness">
-<h2>Brightness<a class="headerlink" href="#brightness" title="Link to this heading"></a></h2>
+<h2><span class="section-number">3.3. </span>Brightness<a class="headerlink" href="#brightness" title="Link to this heading"></a></h2>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ledPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">38</span><span class="p">;</span><span class="w">  </span>
 <span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">freq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5000</span><span class="p">;</span><span class="w">  </span>
 <span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ledChannel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">  </span>
@@ -120,7 +134,7 @@
 </div>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<h2><span class="section-number">3.4. </span>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/Xinyuan-LilyGO/T-Display-S3/">https://github.com/Xinyuan-LilyGO/T-Display-S3/</a></p></li>
 </ul>
@@ -131,8 +145,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="lolins2mini.html" class="btn btn-neutral float-left" title="Lolin S2 Mini" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../modules/index.html" class="btn btn-neutral float-right" title="Modules" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="lolins2mini.html" class="btn btn-neutral float-left" title="2. Lolin S2 Mini" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../rp2040/RP2040.html" class="btn btn-neutral float-right" title="RP2040" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

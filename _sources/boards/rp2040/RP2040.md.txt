@@ -1,0 +1,7 @@
+# RP2040
+
+## VCC-GND YD2040
+
+![ydpins](images/YD-2040-PIN.png){w=600px align=center}
+
+![yd2040](images/yd2040.png){w=600px align=center}

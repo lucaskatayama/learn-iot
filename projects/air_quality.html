@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boards &mdash; IOT v1.0.0 documentation</title>
+  <title>Air Quality Sensor &mdash; IOT v1.0.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Arduino" href="arduino.html" />
-    <link rel="prev" title="Welcome to IOT’s documentation!" href="../index.html" /> 
+    <link rel="next" title="Tools" href="../tools.html" />
+    <link rel="prev" title="MT3608" href="../modules/MT3608.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,13 +42,39 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Boards</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="arduino.html">Arduino</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esp32/index.html">ESP32</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Boards</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../boards/arduino.html">Arduino</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../boards/arduino.html#arduino-nano">Arduino Nano</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../modules/index.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/esp32/index.html">ESP32</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../boards/esp32/esp32devkit.html">1. ESP32 DevKit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../boards/esp32/lolins2mini.html">2. Lolin S2 Mini</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../boards/esp32/lilygo_tdisplay.html">3. LilyGO T-Display S3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../boards/esp32/lilygo_tdisplay.html#diagrams">3.1. Diagrams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../boards/esp32/lilygo_tdisplay.html#enable-display">3.2. Enable Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../boards/esp32/lilygo_tdisplay.html#brightness">3.3. Brightness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../boards/esp32/lilygo_tdisplay.html#references">3.4. References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/rp2040/RP2040.html">RP2040</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../boards/rp2040/RP2040.html#vcc-gnd-yd2040">VCC-GND YD2040</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/MT3608.html">MT3608</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Air Quality Sensor</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
 </ul>
 
@@ -66,9 +92,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Boards</li>
+      <li class="breadcrumb-item active">Air Quality Sensor</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/boards/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/projects/air_quality.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -76,30 +102,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="boards">
-<h1>Boards<a class="headerlink" href="#boards" title="Link to this heading"></a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="arduino.html">Arduino</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="arduino.html#arduino-nano">Arduino Nano</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="air-quality-sensor">
+<h1>Air Quality Sensor<a class="headerlink" href="#air-quality-sensor" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>MQ135</p></li>
+<li><p>AHT10</p></li>
+<li><p>DSM501a</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="esp32/index.html">ESP32</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="esp32/esp32devkit.html">ESP32 DevKit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esp32/lolins2mini.html">Lolin S2 Mini</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esp32/lilygo_tdisplay.html">LilyGO T-Display S3</a></li>
-</ul>
-</li>
-</ul>
-</div>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to IOT’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="arduino.html" class="btn btn-neutral float-right" title="Arduino" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../modules/MT3608.html" class="btn btn-neutral float-left" title="MT3608" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../tools.html" class="btn btn-neutral float-right" title="Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
