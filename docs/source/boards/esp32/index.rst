@@ -2,7 +2,8 @@ ESP32
 =====
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+   :numbered:
    
    esp32devkit
    lolins2mini

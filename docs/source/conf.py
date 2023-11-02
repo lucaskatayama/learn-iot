@@ -35,6 +35,17 @@ myst_enable_extensions = [
     "tasklist",
 ]
 
+html_theme_options = {
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    # Toc options
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': -1,
+    'includehidden': True,
+    'titles_only': False
+}
+
 templates_path = ['_templates']
 exclude_patterns = []
 
