@@ -1,5 +1,5 @@
 # Learning IOT
 
-## Documentation 
+## Documentation
 
-Please refer to [LINK TO DOCS](https://.github.io)
+Please refer to [https://lucaskatayama.github.io/learn-iot/](https://lucaskatayama.github.io/learn-iot/)
