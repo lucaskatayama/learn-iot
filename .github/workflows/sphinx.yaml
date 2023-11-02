@@ -9,10 +9,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Create log
-        run: touch /tmp/sphinx-log
       - name: Build HTML
-        uses: ammaraskar/sphinx-action@master
+        uses: ammaraskar/sphinx-action@0.3
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
