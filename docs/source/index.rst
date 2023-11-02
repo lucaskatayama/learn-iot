@@ -33,6 +33,14 @@ Welcome to IOT's documentation!
 
 .. toctree::
    :hidden:
+   :caption: Smart Home
+
+   smarthome/index
+
+   
+
+.. toctree::
+   :hidden:
    :caption: Resources
 
    tools
