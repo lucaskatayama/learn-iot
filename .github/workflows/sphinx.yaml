@@ -35,7 +35,6 @@ jobs:
           name: github-pages
           path: ${{ runner.temp }}/artifact.tar
           retention-days: 1
-          if-no-files-found: error
   # Deploy job
   deploy:
     # Add a dependency to the build job
