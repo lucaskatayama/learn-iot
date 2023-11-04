@@ -1,7 +1,15 @@
 name: "Sphinx: Render docs"
 
 on: push
-
+inputs:
+  name:
+    description: 'Artifact name'
+    required: false
+    default: 'github-pages'
+  retention-days:
+    description: "Duration after which artifact will expire in days."
+    required: false
+    default: "1"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,11 +22,28 @@ jobs:
         run: |
           pip install -r requirements.txt
           make html
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+      #- name: Upload artifacts
+      #  uses: actions/upload-artifact@v3
+      #  with:
+      #    name: github-pages
+      #    path: docs/build/html/
+      - name: Archive artifact
+          shell: sh
+          run: |
+            tar \
+              --dereference --hard-dereference \
+              --directory docs/build/html/ \
+              -cvf "$RUNNER_TEMP/artifact.tar" \
+              --exclude=.git \
+              --exclude=.github \
+              .
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: github-pages
-          path: docs/build/html/
+          name: ${{ inputs.name }}
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: ${{ inputs.retention-days }}
+          if-no-files-found: error
   # Deploy job
   deploy:
     # Add a dependency to the build job
@@ -32,7 +57,7 @@ jobs:
     # Deploy to the github-pages environment
     environment:
      name: github-pages
-     url: https://lucaskatayama.github.io/learn-iot/
+     url: ${{ steps.deployment.outputs.page_url }}
 
     # Specify runner + deployment step
     runs-on: ubuntu-latest
