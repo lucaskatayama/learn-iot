@@ -1,4 +1,4 @@
- 
+
 .. learn-iot documentation master file, created by
    sphinx-quickstart on Thu Nov  2 13:25:03 2023.
    You can adapt this file completely to your liking, but it should at least
@@ -24,6 +24,7 @@ Welcome to IOT's documentation!
    :caption: Modules
 
    modules/MT3608
+   modules/BME280
 
 .. toctree::
    :hidden:
@@ -37,7 +38,7 @@ Welcome to IOT's documentation!
 
    smarthome/index
 
-   
+
 
 .. toctree::
    :hidden:
