@@ -28,15 +28,15 @@ jobs:
       #    name: github-pages
       #    path: docs/build/html/
       - name: Archive artifact
-          shell: sh
-          run: |
-            tar \
-              --dereference --hard-dereference \
-              --directory docs/build/html/ \
-              -cvf "$RUNNER_TEMP/artifact.tar" \
-              --exclude=.git \
-              --exclude=.github \
-              .
+        shell: sh
+        run: |
+          tar \
+            --dereference --hard-dereference \
+            --directory docs/build/html/ \
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
+            .
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
