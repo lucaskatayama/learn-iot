@@ -1,15 +1,7 @@
 name: "Sphinx: Render docs"
 
 on: push
-inputs:
-  name:
-    description: 'Artifact name'
-    required: false
-    default: 'github-pages'
-  retention-days:
-    description: "Duration after which artifact will expire in days."
-    required: false
-    default: "1"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -40,9 +32,9 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          name: ${{ inputs.name }}
+          name: github-pages
           path: ${{ runner.temp }}/artifact.tar
-          retention-days: ${{ inputs.retention-days }}
+          retention-days: 1
           if-no-files-found: error
   # Deploy job
   deploy:
