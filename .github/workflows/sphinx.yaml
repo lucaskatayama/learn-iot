@@ -14,21 +14,6 @@ jobs:
         run: |
           pip install -r requirements.txt
           make html
-      #- name: Upload artifacts
-      #  uses: actions/upload-artifact@v3
-      #  with:
-      #    name: github-pages
-      #    path: docs/build/html/
-#      - name: Archive artifact
-#        shell: sh
-#        run: |
-#          tar \
-#            --dereference --hard-dereference \
-#            --directory docs/build/html/ \
-#            -cvf "$RUNNER_TEMP/artifact.tar" \
-#            --exclude=.git \
-#            --exclude=.github \
-#            .
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
