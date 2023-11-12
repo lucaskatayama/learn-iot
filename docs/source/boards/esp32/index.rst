@@ -7,5 +7,5 @@ ESP32
 
    esp32devkit
    lolins2mini
-   lilygo_tdisplay
-   ttgo_tdisplay
+   LILYGOTDisplayS3
+   TTGOTDisplay

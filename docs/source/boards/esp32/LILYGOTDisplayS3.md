@@ -1,8 +1,18 @@
-# LilyGO T-Display S3
+# LILYGO T-Display S3
 
-## Diagrams
+::::{grid} 12
+:::{grid-item}
+:columns: 9
+![pinout](images/LILYGOTDisplayS3_pinout.png)
+:::
+:::{grid-item}
+:child-align: center
+:columns: 3
+![pinout](images/LILYGOTDisplayS3_pinout.png)
+:::
+::::
 
-![lilygo_tdisplay_s3.jpg.png](images/lilygo_tdisplay_s3.jpg.png){w=600px align=center}
+
 
 ## Enable Display
 

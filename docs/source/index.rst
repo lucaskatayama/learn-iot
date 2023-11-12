@@ -18,6 +18,7 @@ Welcome to IOT's documentation!
    boards/arduino/index
    boards/esp32/index
    boards/RP2040/index
+   boards/raspberry/index
 
 .. toctree::
    :hidden:
