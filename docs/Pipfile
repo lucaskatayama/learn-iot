@@ -8,6 +8,8 @@ sphinx = "*"
 sphinx-rtd-theme = "*"
 myst-parser = "*"
 sphinxcontrib-mermaid = "*"
+sphinx-autobuild = "*"
+sphinx-design = "*"
 
 [dev-packages]
 

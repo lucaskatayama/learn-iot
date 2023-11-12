@@ -8,23 +8,25 @@ Welcome to IOT's documentation!
 =====================================
 
 .. image:: _static/images/cover.png
+   :align: center
 
 .. toctree::
    :hidden:
    :maxdepth: 4
    :caption: Boards
 
-   boards/arduino
+   boards/arduino/index
    boards/esp32/index
-   boards/rp2040/RP2040
+   boards/RP2040/index
 
 .. toctree::
    :hidden:
    :maxdepth: 4
    :caption: Modules
 
-   modules/MT3608
-   modules/BME280
+   modules/displays/index
+   modules/sensors/index
+   modules/others/index
 
 .. toctree::
    :hidden:

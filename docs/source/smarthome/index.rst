@@ -4,11 +4,11 @@ Integrating your IOT devices
 .. toctree::
     :maxdepth: 1
     :hidden:
-    
+
     homeassistant
     tasmota
     esphome
-    
+
 
 .. mermaid::
     :align: center
@@ -16,5 +16,6 @@ Integrating your IOT devices
     graph TD
         Tasmota --> HomeAssistant
         ESPHome --> HomeAssistant
+        Tasmota --> Matter
 
 

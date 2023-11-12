@@ -19,6 +19,5 @@ help:
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-github:
-	@make html
-	@cp -a build/html/. ../docs
+dev:
+	sphinx-autobuild --pre-build 'rm -rf build/html' ./source build/html

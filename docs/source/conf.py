@@ -16,7 +16,12 @@ release = 'v1.0.0'
 
 extensions = [
     'myst_parser',
-    'sphinxcontrib.mermaid'
+    'sphinxcontrib.mermaid',
+    "sphinx_design"
+]
+
+html_css_files = [
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 ]
 
 myst_enable_extensions = [
