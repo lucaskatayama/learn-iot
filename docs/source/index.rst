@@ -48,6 +48,7 @@ Welcome to IOT's documentation!
    :caption: Resources
 
    tools
+   references
 
 Indices and tables
 ==================

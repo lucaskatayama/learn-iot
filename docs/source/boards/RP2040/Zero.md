@@ -10,3 +10,6 @@
 :::
 ::::
 
+## References
+
+- [CircuitPython](https://circuitpython.org/board/waveshare_rp2040_zero/)
